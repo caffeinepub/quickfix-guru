@@ -1,0 +1,192 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-26T02:01:10.673Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 11,
+    "implemented": 11,
+    "items": [
+      {
+        "id": "REQ-35",
+        "summary": "Rebrand the entire application from 'QuickFix Guru' to 'QuickRepair'. Replace all instances of the old brand name in every component, translation key, page title, footer, and meta tags. The logo must display the 🔧 icon followed by 'Quick' in yellow (#FFD700) and 'Repair' in orange (#ff8c42). The tagline everywhere must read '10 Minute Service at Your Doorstep'.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/index.html",
+          "frontend/src/contexts/LanguageContext.tsx",
+          "frontend/src/components/Navbar.tsx",
+          "frontend/src/components/Hero.tsx",
+          "frontend/src/components/Footer.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/index.html",
+          "frontend/src/contexts/LanguageContext.tsx",
+          "frontend/src/components/Navbar.tsx",
+          "frontend/src/components/Hero.tsx",
+          "frontend/src/components/Footer.tsx"
+        ]
+      },
+      {
+        "id": "REQ-36",
+        "summary": "Replace the existing Navbar with a QuickRepair header. The header must show the 🔧 QuickRepair logo on the left and a hamburger menu (☰) on the right. The hamburger menu must open with a smooth slide-in overlay and close when any menu option is clicked. Menu options must be: Home, Services, About, Contact, Become Mechanic. Each option scrolls to the corresponding section. Remove the Language Switch toggle, Login/Register, Booking History, and Refer & Earn links from the navbar entirely.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Navbar.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Navbar.tsx"
+        ]
+      },
+      {
+        "id": "REQ-37",
+        "summary": "Rebuild the Hero section with: a large bold heading '🔧 QuickRepair Mahipalpur', subtitle '10 Minute Service at Your Doorstep', an animated CSS gradient background transitioning between dark blue #0a2b3c and #1a4b6e, and a floating/pulse CSS animation on the main heading text. Remove the stat badges, bilingual toggle, and old CTA scroll button.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Hero.tsx",
+          "frontend/src/index.css"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Hero.tsx",
+          "frontend/src/index.css"
+        ]
+      },
+      {
+        "id": "REQ-38",
+        "summary": "Rebuild the Services section with exactly 5 service cards displayed in a responsive grid. Each card must show a relevant icon, the service name, and its fixed price. The services and prices are: Plumber ₹460, Electrician ₹160, Fan / Cooler Repair ₹190, AC Repair ₹470, Mechanic (General) ₹390. Each card must have a lift-up hover effect with a box shadow. Clicking any card must open WhatsApp (https://wa.me/8447978940) with the pre-filled URL-encoded message: 'Hi QuickRepair, I need [service name] in Mahipalpur.' Remove any existing OTP-based booking modal trigger from service card clicks. Remove the 'Schedule for Later' button from this section.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Services.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Services.tsx"
+        ]
+      },
+      {
+        "id": "REQ-39",
+        "summary": "Add a prominent pulsing green WhatsApp CTA button labeled '📲 BOOK VIA WHATSAPP' below the Services section. The button must have a continuous CSS pulse animation. Clicking it must open https://wa.me/8447978940?text=Hi%20QuickRepair%2C%20mujhe%20service%20chahiye%20Mahipalpur%20mein in a new tab.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Services.tsx",
+          "frontend/src/index.css"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Services.tsx",
+          "frontend/src/index.css"
+        ]
+      },
+      {
+        "id": "REQ-40",
+        "summary": "Wire the 'Become Mechanic' navbar menu option to open WhatsApp (https://wa.me/8447978940) with the pre-filled URL-encoded message: 'Hi QuickRepair, main mechanic banana chahta hoon. Mera naam ______, phone ______, service ______.' Remove the existing ProviderRegistrationForm modal; no OTP form should open for this action.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Navbar.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Navbar.tsx"
+        ]
+      },
+      {
+        "id": "REQ-41",
+        "summary": "Rebuild the About Us section with a clean card-based layout. The section must contain four feature cards, each with an icon and label: ✅ Verified Mechanics, ⏱️ 10 Min Guarantee, 💵 Cash on Delivery, 🚫 No Hidden Charges. Remove all bilingual toggle logic from this section; display content in English only.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/AboutUs.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/AboutUs.tsx"
+        ]
+      },
+      {
+        "id": "REQ-42",
+        "summary": "Rebuild the Contact Us section displaying: phone number 8447978940 (with tel: link), email quickrepair@help.in (with mailto: link), service areas (Mahipalpur Extension, Mahipalpur Village, Aerocity, Vasant Kunj, RK Puram, Kapashera), and working hours (8 AM to 10 PM, Emergency 24x7). Each item must have an icon with a hover color-change effect.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ContactUs.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ContactUs.tsx"
+        ]
+      },
+      {
+        "id": "REQ-43",
+        "summary": "Rebuild the Footer to show: QuickRepair name and tagline '10 Minute Service at Your Doorstep', contact info (phone 8447978940, email quickrepair@help.in, area Mahipalpur, Delhi), quick navigation links (Home, Services, About, Contact), and a copyright line '© 2024 QuickRepair. All rights reserved.' Footer links must have a subtle hover animation. The footer must be fully responsive.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Footer.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Footer.tsx"
+        ]
+      },
+      {
+        "id": "REQ-44",
+        "summary": "Update the global color scheme and design system to match the QuickRepair brand. Primary colors: dark navy #0a2b3c (backgrounds), yellow #FFD700 (accent / 'Quick' text), orange #ff8c42 (CTA / 'Repair' text), white for body text. Apply stagger entrance animations to service cards on page load. Ensure smooth scrolling is active for all anchor/section navigation. All interactive buttons must have visible hover and active (click) feedback. Ensure no content overlaps on mobile.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/tailwind.config.js",
+          "frontend/src/index.css",
+          "frontend/src/components/Services.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/tailwind.config.js",
+          "frontend/src/index.css",
+          "frontend/src/components/Services.tsx"
+        ]
+      },
+      {
+        "id": "REQ-45",
+        "summary": "Remove all features that are not part of the QuickRepair WhatsApp-based flow: OTP booking modal (BookingForm), SuccessModal, PaymentPage, InAppChat, LiveTracking, RatingReview, BookingHistory, ReferEarn, ScheduleBooking, ProviderProfile, ProvidersSection, ProviderRegistrationForm, and EmergencySOS components must all be removed from the rendered UI and from App.tsx. All related modal state variables, handlers, and translation keys should be cleaned up. The floating WhatsApp and Call buttons (FloatingButtons.tsx) must remain and continue to link to 8447978940.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/components/FloatingButtons.tsx",
+          "frontend/src/components/Navbar.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/components/Navbar.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "build-template/README.md",
+    "caffeine.lock.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/AboutUs.tsx",
+    "frontend/src/components/BookingForm.tsx",
+    "frontend/src/components/BookingHistory.tsx",
+    "frontend/src/components/ContactUs.tsx",
+    "frontend/src/components/EmergencySOS.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Hero.tsx",
+    "frontend/src/components/InAppChat.tsx",
+    "frontend/src/components/LiveTracking.tsx",
+    "frontend/src/components/Navbar.tsx",
+    "frontend/src/components/OtpFlow.tsx",
+    "frontend/src/components/PaymentPage.tsx",
+    "frontend/src/components/ProviderProfile.tsx",
+    "frontend/src/components/ProviderRegistrationForm.tsx",
+    "frontend/src/components/ProvidersSection.tsx",
+    "frontend/src/components/RatingReview.tsx",
+    "frontend/src/components/ReferEarn.tsx",
+    "frontend/src/components/ScheduleBooking.tsx",
+    "frontend/src/components/Services.tsx",
+    "frontend/src/components/SuccessModal.tsx",
+    "frontend/src/contexts/LanguageContext.tsx",
+    "frontend/src/index.css",
+    "frontend/tailwind.config.js",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

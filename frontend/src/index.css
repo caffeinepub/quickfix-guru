@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-navy-dark: #061e2b;
+  --brand-navy: #0a2b3c;
+  --brand-navy-light: #0f3d56;
+  --brand-orange: #ff8c42;
+  --brand-orange-dark: #e67a30;
+  --brand-yellow: #FFD700;
+  --brand-bg: #f4f7fb;
+  --brand-success: #22c55e;
+  --brand-text-muted: #64748b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--brand-bg);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* ─── Tailwind color aliases ─────────────────────────────────────────────── */
+.bg-navy { background-color: var(--brand-navy); }
+.bg-navy\/95 { background-color: rgba(10, 43, 60, 0.95); }
+.bg-navy-dark { background-color: var(--brand-navy-dark); }
+.bg-navy-light { background-color: var(--brand-navy-light); }
+.bg-brand-orange { background-color: var(--brand-orange); }
+.bg-brand-orange-dark { background-color: var(--brand-orange-dark); }
+.bg-light-gray { background-color: var(--brand-bg); }
+.text-navy { color: var(--brand-navy); }
+.text-navy-dark { color: var(--brand-navy-dark); }
+.text-brand-orange { color: var(--brand-orange); }
+.text-brand-yellow { color: var(--brand-yellow); }
+.border-brand-orange { border-color: var(--brand-orange); }
+.fill-brand-orange { fill: var(--brand-orange); }
+
+.hover\:bg-brand-orange:hover { background-color: var(--brand-orange); }
+.hover\:bg-brand-orange-dark:hover { background-color: var(--brand-orange-dark); }
+.hover\:text-brand-yellow:hover { color: var(--brand-yellow); }
+.hover\:text-brand-orange:hover { color: var(--brand-orange); }
+
+.bg-brand-orange\/10 { background-color: rgba(255, 140, 66, 0.1); }
+.bg-brand-orange\/20 { background-color: rgba(255, 140, 66, 0.2); }
+
+/* ─── Hero Gradient ──────────────────────────────────────────────────────── */
+.hero-gradient {
+  background: #0a2b3c;
+}
+
+.hero-gradient-anim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #0a2b3c 0%, #1a4b6e 50%, #0a2b3c 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ─── Hero Float Animation ───────────────────────────────────────────────── */
+.hero-float {
+  animation: heroFloat 4s ease-in-out infinite;
+}
+
+@keyframes heroFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ─── Service Card ───────────────────────────────────────────────────────── */
+.service-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+  animation: cardFadeIn 0.5s ease-out both;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(255, 140, 66, 0.2);
+  border-color: var(--brand-orange);
+}
+
+.service-card:active {
+  transform: translateY(-2px);
+}
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ─── WhatsApp Pulse Button ──────────────────────────────────────────────── */
+.whatsapp-pulse-btn {
+  animation: whatsappPulse 2s ease-in-out infinite;
+}
+
+@keyframes whatsappPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.5), 0 8px 24px rgba(34, 197, 94, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(34, 197, 94, 0), 0 8px 32px rgba(34, 197, 94, 0.5);
+  }
+}
+
+/* ─── Contact Card ───────────────────────────────────────────────────────── */
+.contact-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  display: block;
+  border: 2px solid transparent;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: var(--brand-orange);
+}
+
+/* ─── Floating Buttons ───────────────────────────────────────────────────── */
+.floating-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+
+.floating-btn:hover {
+  transform: scale(1.12);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ─── Animations ─────────────────────────────────────────────────────────── */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .floating-btn {
+    width: 46px;
+    height: 46px;
+  }
+}
+
+/* ─── Scrollbar ──────────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-navy);
+}
+
+/* ─── Navbar padding offset ──────────────────────────────────────────────── */
+#home {
+  padding-top: 64px;
+}

@@ -1,0 +1,380 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 11,
+  "summary": "QuickRepair - Professional service booking website for Mahipalpur, Delhi (rebranded from QuickFix Guru). Single HTML file with inline CSS and JS. Business: QuickRepair, contact 8447978940, email quickrepair@help.in, working hours 8AM-10PM (Emergency 24x7). Service areas: Mahipalpur Extension, Mahipalpur Village, Aerocity, Vasant Kunj, RK Puram, Kapashera. Services with fixed prices: Plumber ₹460, Electrician ₹160, Fan/Cooler Repair ₹190, AC Repair ₹470, Mechanic ₹390. Features: hamburger menu (Home, Services, About, Contact, Become Mechanic), hero section with gradient animation, service cards with WhatsApp booking links, pulsing WhatsApp CTA button, About section, Contact section, Footer. All bookings via WhatsApp. COD only. Fully responsive. No OTP system — WhatsApp-based booking flow.",
+  "architectural_notes": [
+    "Business rebranded to QuickRepair — logo: 'Quick' in yellow #FFD700, 'Repair' in orange #ff8c42",
+    "All bookings via WhatsApp (wa.me/8447978940) — no OTP or form-based booking system",
+    "Service prices fixed: Plumber ₹460, Electrician ₹160, Fan/Cooler ₹190, AC ₹470, Mechanic ₹390",
+    "Service areas: Mahipalpur Extension, Mahipalpur Village, Aerocity, Vasant Kunj, RK Puram, Kapashera"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-build-the-quickfix-guru-app-as-a-react-typescript-frontend-with-a-dark-navy-blue-0a2b3c-burnt-orange-ff6b35-and-light-gray-f4f7fb-color-theme-apply-consistent-typography-hover-effects-and-smooth-transitions-throughout-the-layout-must-be-fully-responsive-across-mobile-tablet-and-desktop",
+      "title": "Build the QuickFix Guru app as a React + TypeScript frontend with a dark navy blue (#0a2b3c), burnt orange (#ff6b35), and light gray (#f4f7fb) color theme. Apply consistent typography, hover effects, and smooth transitions throughout. The layout must be fully responsive across mobile, tablet, and desktop.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-top-navigation-bar-with-the-quickfix-guru-logo-name-on-the-left-a-language-switch-button-english-hindi-toggle-in-the-center-right-and-a-hamburger-menu-on-the-far-right-the-hamburger-menu-must-expand-to-show-home-services-about-us-contact-us-become-a-provider-and-login-register-links-all-nav-links-must-scroll-to-the-relevant-section-or-open-the-relevant-form",
+      "title": "Implement a top navigation bar with the QuickFix Guru logo/name on the left, a Language Switch button (English / Hindi toggle) in the center-right, and a hamburger menu (☰) on the far right. The hamburger menu must expand to show: Home, Services, About Us, Contact Us, Become a Provider, and Login / Register links. All nav links must scroll to the relevant section or open the relevant form.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-hero-section-with-heading-fast-service-in-mahipalpur-hindi-10-subheading-plumber-electrician-carpenter-ac-mechanic-and-three-stat-badges-50-pros-10-min-2000-customers-include-a-prominent-cta-button-that-scrolls-to-the-services-section",
+      "title": "Create a Hero section with: heading 'Fast Service in Mahipalpur' (Hindi: 'महिपालपुर में 10 मिनट सर्विस'), subheading 'Plumber • Electrician • Carpenter • AC • Mechanic', and three stat badges: '50+ Pros', '10⏱️ Min', '2000+ Customers'. Include a prominent CTA button that scrolls to the Services section.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-services-section-with-five-clickable-cards-plumber-electrician-carpenter-ac-repair-and-mechanic-each-card-should-display-a-relevant-icon-service-name-and-a-short-description-clicking-any-card-opens-the-booking-form-modal-pre-filled-with-the-selected-service-type",
+      "title": "Implement a Services section with five clickable cards: Plumber, Electrician, Carpenter, AC Repair, and Mechanic. Each card should display a relevant icon, service name, and a short description. Clicking any card opens the Booking Form modal pre-filled with the selected service type.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-booking-form-modal-with-fields-name-mobile-number-address-and-problem-description-include-a-send-otp-button-that-reveals-a-6-digit-otp-input-field-in-demo-mode-the-correct-otp-is-123456-the-form-submit-button-must-remain-disabled-until-otp-is-successfully-verified-implement-a-2-minute-countdown-timer-for-otp-expiry-and-a-resend-otp-option-that-resets-the-timer-otp-input-should-auto-focus-when-revealed",
+      "title": "Build a Booking Form modal with fields: Name, Mobile Number, Address, and Problem Description. Include a 'Send OTP' button that reveals a 6-digit OTP input field. In demo mode, the correct OTP is 123456. The form Submit button must remain disabled until OTP is successfully verified. Implement a 2-minute countdown timer for OTP expiry and a 'Resend OTP' option that resets the timer. OTP input should auto-focus when revealed.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-after-successful-booking-form-submission-display-a-success-modal-the-modal-must-not-show-the-otp-number-content-must-be-language-aware-english-booking-confirmed-we-ll-reach-you-in-10-minutes-hindi-10-the-modal-must-include-an-ok-button-that-closes-it",
+      "title": "After successful booking form submission, display a success modal. The modal must NOT show the OTP number. Content must be language-aware: English: '✅ Booking Confirmed! We'll reach you in 10 minutes.' / Hindi: '✅ बुकिंग कन्फर्म! हम 10 मिनट में पहुंचेंगे।'. The modal must include an 'OK' button that closes it.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-floating-whatsapp-button-that-opens-wa-me-8447978940-in-a-new-tab-and-a-floating-call-button-that-triggers-tel-8447978940-both-buttons-must-always-be-visible-fixed-position-and-functional-on-all-pages-sections",
+      "title": "Add a floating WhatsApp button that opens wa.me/8447978940 in a new tab, and a floating Call button that triggers tel:8447978940. Both buttons must always be visible (fixed position) and functional on all pages/sections.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-become-a-provider-registration-form-section-modal-with-fields-for-the-provider-s-name-mobile-number-service-type-dropdown-plumber-electrician-carpenter-ac-repair-mechanic-and-experience-include-the-same-otp-verification-flow-demo-otp-123456-2-minute-timer-resend-option-after-successful-submission-show-a-success-modal-with-language-aware-messages-english-registration-successful-verification-within-24-hours-hindi-24-and-an-ok-button",
+      "title": "Create a 'Become a Provider' registration form section/modal with fields for the provider's Name, Mobile Number, Service Type (dropdown: Plumber, Electrician, Carpenter, AC Repair, Mechanic), and Experience. Include the same OTP verification flow (demo OTP: 123456, 2-minute timer, resend option). After successful submission, show a success modal with language-aware messages — English: '✅ Registration Successful! Verification within 24 hours.' / Hindi: '✅ रजिस्ट्रेशन सफल! 24 घंटे में वेरिफिकेशन।' — and an OK button.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-about-us-section-describing-quickfix-guru-s-mission-and-coverage-in-mahipalpur-delhi-and-a-contact-us-section-showing-the-phone-number-8447978940-service-area-mahipalpur-delhi-and-a-contact-form-or-direct-link",
+      "title": "Build an About Us section describing QuickFix Guru's mission and coverage in Mahipalpur, Delhi, and a Contact Us section showing the phone number 8447978940, service area (Mahipalpur, Delhi), and a contact form or direct link.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-footer-with-quickfix-guru-name-and-tagline-contact-info-phone-8447978940-area-mahipalpur-delhi-quick-navigation-links-home-services-about-us-contact-us-and-a-copyright-line-footer-must-be-responsive",
+      "title": "Implement a footer with: QuickFix Guru name and tagline, contact info (phone: 8447978940, area: Mahipalpur, Delhi), quick navigation links (Home, Services, About Us, Contact Us), and a copyright line. Footer must be responsive.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-full-bilingual-english-hindi-support-across-the-entire-application-every-piece-of-user-facing-text-navigation-labels-section-headings-button-labels-form-placeholders-service-names-stats-modal-messages-footer-content-must-switch-instantly-when-the-language-toggle-button-is-clicked",
+      "title": "Implement full bilingual (English / Hindi) support across the entire application. Every piece of user-facing text — navigation labels, section headings, button labels, form placeholders, service names, stats, modal messages, footer content — must switch instantly when the language toggle button is clicked.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-expand-the-hamburger-menu-in-navbar-tsx-to-include-two-additional-links-booking-history-and-refer-earn-both-links-must-scroll-to-or-navigate-to-their-respective-sections-pages-all-existing-links-home-services-about-us-contact-us-become-a-provider-login-register-must-remain-the-menu-must-be-fully-bilingual-add-translation-keys-for-booking-history-hindi-and-refer-earn-hindi-to-languagecontext-tsx",
+      "title": "Expand the hamburger menu in Navbar.tsx to include two additional links: 'Booking History' and 'Refer & Earn'. Both links must scroll to or navigate to their respective sections/pages. All existing links (Home, Services, About Us, Contact Us, Become a Provider, Login/Register) must remain. The menu must be fully bilingual — add translation keys for 'Booking History' (Hindi: 'बुकिंग हिस्ट्री') and 'Refer & Earn' (Hindi: 'रेफर और कमाएं') to LanguageContext.tsx.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-live-tracking-section-modal-that-appears-after-a-booking-is-confirmed-display-a-demo-map-static-image-or-css-drawn-grid-showing-a-dummy-provider-location-marker-and-the-customer-s-location-along-with-an-eta-display-e-g-provider-arriving-in-8-minutes-the-provider-marker-must-appear-to-animate-toward-the-destination-add-a-track-provider-button-to-the-booking-success-modal-that-opens-this-view-all-text-must-be-bilingual",
+      "title": "Build a Live Tracking section/modal that appears after a booking is confirmed. Display a demo map (static image or CSS-drawn grid) showing a dummy provider location marker and the customer's location, along with an ETA display (e.g., 'Provider arriving in 8 minutes'). The provider marker must appear to animate toward the destination. Add a 'Track Provider' button to the booking success modal that opens this view. All text must be bilingual.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-an-in-app-chat-component-that-becomes-accessible-after-a-booking-is-confirmed-the-chat-ui-must-show-a-conversation-thread-between-customer-and-provider-demo-include-a-text-input-and-send-button-add-a-dummy-send-photo-button-that-shows-a-placeholder-image-thumbnail-in-the-chat-persist-chat-history-in-localstorage-keyed-by-booking-id-all-ui-text-must-be-bilingual",
+      "title": "Build an In-App Chat component that becomes accessible after a booking is confirmed. The chat UI must show a conversation thread between 'Customer' and 'Provider (Demo)'. Include a text input and send button. Add a dummy 'Send Photo' button that shows a placeholder image thumbnail in the chat. Persist chat history in localStorage keyed by booking ID. All UI text must be bilingual.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-payment-page-component-with-four-payment-options-cash-upi-card-and-wallet-for-upi-display-a-dummy-qr-code-image-or-svg-placeholder-labeled-fixmaster-okhdfcbank-for-card-show-name-number-expiry-cvv-fields-non-functional-demo-for-wallet-show-a-dummy-wallet-balance-each-option-has-a-pay-now-or-confirm-payment-button-that-shows-a-payment-success-modal-payment-successful-thank-you-for-using-quickfix-guru-hindi-quickfix-guru-the-payment-page-must-be-reachable-from-the-booking-flow-all-text-must-be-bilingual",
+      "title": "Build a Payment Page component with four payment options: Cash, UPI, Card, and Wallet. For UPI, display a dummy QR code image (or SVG placeholder) labeled 'FixMaster@okhdfcbank'. For Card, show name/number/expiry/CVV fields (non-functional demo). For Wallet, show a dummy wallet balance. Each option has a 'Pay Now' or 'Confirm Payment' button that shows a Payment Success modal: '✅ Payment Successful! Thank you for using QuickFix Guru.' (Hindi: '✅ भुगतान सफल! QuickFix Guru का उपयोग करने के लिए धन्यवाद।'). The Payment Page must be reachable from the booking flow. All text must be bilingual.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-rating-review-component-that-appears-after-a-service-is-marked-as-complete-add-a-demo-mark-as-complete-button-in-booking-history-the-component-must-allow-the-customer-to-select-1-5-stars-and-write-a-text-review-on-submission-store-the-rating-and-review-in-localstorage-on-the-provider-profile-page-display-the-average-rating-calculated-from-all-stored-reviews-for-that-provider-all-text-must-be-bilingual",
+      "title": "Build a Rating & Review component that appears after a service is marked as complete (add a demo 'Mark as Complete' button in Booking History). The component must allow the customer to select 1–5 stars and write a text review. On submission, store the rating and review in localStorage. On the Provider Profile page, display the average rating calculated from all stored reviews for that provider. All text must be bilingual.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-booking-history-page-section-reachable-from-the-navbar-booking-history-link-and-as-a-standalone-view-it-must-display-a-list-of-demo-bookings-at-minimum-3-pre-seeded-entries-with-columns-date-service-provider-name-and-status-each-row-must-have-a-re-book-button-that-opens-the-bookingform-modal-pre-filled-with-that-service-type-all-text-must-be-bilingual",
+      "title": "Build a Booking History page/section (reachable from the navbar 'Booking History' link and as a standalone view). It must display a list of demo bookings (at minimum 3 pre-seeded entries) with columns: Date, Service, Provider Name, and Status. Each row must have a 'Re-book' button that opens the BookingForm modal pre-filled with that service type. All text must be bilingual.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-refer-earn-dashboard-section-page-reachable-from-the-navbar-refer-earn-link-display-a-unique-referral-code-for-the-user-e-g-fix123-can-be-randomly-generated-once-and-stored-in-localstorage-show-a-copy-code-button-and-a-message-explaining-that-both-the-referrer-and-the-friend-get-50-discount-when-the-friend-books-using-the-code-display-a-demo-count-of-successful-referrals-starts-at-0-stored-in-localstorage-all-text-must-be-bilingual",
+      "title": "Build a Refer & Earn dashboard section/page (reachable from the navbar 'Refer & Earn' link). Display a unique referral code for the user (e.g., 'FIX123' — can be randomly generated once and stored in localStorage). Show a 'Copy Code' button and a message explaining that both the referrer and the friend get ₹50 discount when the friend books using the code. Display a demo count of successful referrals (starts at 0, stored in localStorage). All text must be bilingual.",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-persistent-emergency-sos-button-visible-on-all-pages-fixed-position-distinct-from-whatsapp-call-buttons-use-a-red-background-with-sos-label-clicking-it-opens-a-demo-modal-showing-alerting-5-nearest-providers-with-a-3-second-progress-animation-followed-by-rajesh-kumar-has-accepted-your-request-he-will-arrive-in-5-minutes-include-a-cancel-button-to-close-the-modal-all-text-must-be-bilingual",
+      "title": "Add a persistent Emergency SOS button visible on all pages (fixed position, distinct from WhatsApp/Call buttons — use a red background with 'SOS' label). Clicking it opens a demo modal showing: 'Alerting 5 nearest providers…' with a 3-second progress animation, followed by: 'Rajesh Kumar has accepted your request! He will arrive in 5 minutes.' Include a 'Cancel' button to close the modal. All text must be bilingual.",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-schedule-booking-component-page-where-customers-can-select-a-future-date-and-time-using-a-date-time-picker-input-it-must-include-name-mobile-service-type-and-address-fields-plus-the-standard-otp-verification-flow-demo-otp-123456-2-minute-timer-resend-on-successful-submission-show-a-demo-reminder-alert-modal-reminder-set-you-will-be-notified-before-your-scheduled-booking-on-selected-date-time-hindi-equivalent-the-schedule-booking-option-must-be-accessible-from-the-services-section-or-navbar-all-text-must-be-bilingual",
+      "title": "Build a Schedule Booking component/page where customers can select a future date and time using a date-time picker input. It must include Name, Mobile, Service Type, and Address fields plus the standard OTP verification flow (demo OTP: 123456, 2-minute timer, resend). On successful submission, show a demo reminder alert/modal: 'Reminder set! You will be notified before your scheduled booking on [selected date/time].' (Hindi equivalent). The Schedule Booking option must be accessible from the Services section or navbar. All text must be bilingual.",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-provider-profile-page-component-showing-demo-provider-data-profile-photo-placeholder-avatar-name-service-type-experience-e-g-5-years-average-star-rating-total-jobs-completed-and-a-list-of-customer-reviews-at-least-2-demo-reviews-include-a-book-now-button-that-opens-the-bookingform-modal-pre-filled-with-the-provider-s-service-type-provider-profiles-must-be-accessible-by-clicking-a-provider-s-name-in-booking-history-or-from-a-meet-our-providers-section-on-the-homepage-or-services-page-all-text-must-be-bilingual-average-rating-must-reflect-any-reviews-submitted-via-the-rating-review-system-req-16",
+      "title": "Build a Provider Profile page/component showing demo provider data: profile photo (placeholder avatar), name, service type, experience (e.g., '5 years'), average star rating, total jobs completed, and a list of customer reviews (at least 2 demo reviews). Include a 'Book Now' button that opens the BookingForm modal pre-filled with the provider's service type. Provider profiles must be accessible by clicking a provider's name in Booking History or from a 'Meet Our Providers' section on the homepage or Services page. All text must be bilingual. Average rating must reflect any reviews submitted via the Rating & Review system (REQ-16).",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-existing-payment-page-component-paymentpage-tsx-with-a-cod-cash-on-delivery-only-payment-view-remove-all-upi-card-and-wallet-payment-tabs-options-entirely-the-cod-view-must-display-a-clear-message-pay-xxx-at-doorstep-when-the-provider-arrives-with-a-single-confirm-cod-button-clicking-confirm-cod-shows-a-success-modal-english-payment-confirmed-pay-cash-at-doorstep-hindi-with-an-ok-button-to-close-all-text-must-be-bilingual",
+      "title": "Replace the existing Payment Page component (PaymentPage.tsx) with a COD (Cash on Delivery) only payment view. Remove all UPI, Card, and Wallet payment tabs/options entirely. The COD view must display a clear message: 'Pay ₹XXX at doorstep when the provider arrives.' with a single 'Confirm COD' button. Clicking 'Confirm COD' shows a success modal: English: '✅ Payment Confirmed! Pay cash at doorstep.' / Hindi: '✅ भुगतान कन्फर्म! दरवाजे पर नकद भुगतान करें।' with an OK button to close. All text must be bilingual.",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-booking-success-message-in-successmodal-tsx-and-any-other-location-where-booking-confirmation-text-is-shown-to-read-english-booking-confirmed-provider-5-min-away-pay-xxx-at-doorstep-hindi-5-add-the-corresponding-translation-keys-to-languagecontext-tsx-the-existing-track-provider-chat-and-ok-action-buttons-in-the-success-modal-must-remain-intact",
+      "title": "Update the booking success message in SuccessModal.tsx (and any other location where booking confirmation text is shown) to read: English: '✅ Booking Confirmed! Provider 5 min away. Pay ₹XXX at doorstep.' / Hindi: '✅ बुकिंग कन्फर्म! प्रोवाइडर 5 मिनट में आएगा। दरवाजे पर भुगतान करें।' Add the corresponding translation keys to LanguageContext.tsx. The existing 'Track Provider', 'Chat', and 'OK' action buttons in the success modal must remain intact.",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-audit-and-verify-that-all-existing-features-are-fully-functional-and-wired-together-end-to-end-hamburger-menu-navigation-all-8-links-language-switch-english-hindi-instant-toggle-across-every-ui-string-hero-section-cta-scroll-service-card-click-bookingform-modal-pre-filled-otp-flow-demo-otp-123456-2-min-timer-resend-auto-focus-submit-gated-on-verification-provider-registration-otp-flow-floating-whatsapp-call-buttons-about-us-contact-us-and-footer-sections-fix-any-broken-links-missing-handlers-or-non-functional-buttons-found-during-the-audit",
+      "title": "Audit and verify that all existing features are fully functional and wired together end-to-end: hamburger menu navigation (all 8 links), language switch (English/Hindi instant toggle across every UI string), hero section CTA scroll, service card click → BookingForm modal pre-filled, OTP flow (demo OTP 123456, 2-min timer, resend, auto-focus, submit gated on verification), provider registration OTP flow, floating WhatsApp/Call buttons, About Us, Contact Us, and Footer sections. Fix any broken links, missing handlers, or non-functional buttons found during the audit.",
+      "reqIds": [
+        "REQ-24"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-booking-success-modal-successmodal-tsx-displays-the-message-booking-confirmed-provider-5-min-away-pay-xxx-at-doorstep-in-english-and-5-in-hindi-the-modal-must-include-functional-chat-and-ok-buttons-the-track-provider-button-must-be-removed-live-tracking-feature-is-excluded-the-payment-button-must-open-the-cod-paymentpage-modal",
+      "title": "Ensure the Booking Success modal (SuccessModal.tsx) displays the message '✅ Booking Confirmed! Provider 5 min away. Pay ₹XXX at doorstep.' in English and '✅ बुकिंग कन्फर्म! प्रोवाइडर 5 मिनट में आएगा। दरवाजे पर भुगतान करें।' in Hindi. The modal must include functional 'Chat' and 'OK' buttons. The 'Track Provider' button must be removed (Live Tracking feature is excluded). The 'Payment' button must open the COD PaymentPage modal.",
+      "reqIds": [
+        "REQ-25"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-paymentpage-tsx-shows-only-the-cash-on-delivery-cod-option-the-view-must-display-pay-xxx-at-doorstep-when-the-provider-arrives-and-a-single-confirm-cod-button-clicking-confirm-cod-shows-a-success-modal-english-payment-confirmed-pay-cash-at-doorstep-hindi-with-an-ok-button-no-upi-card-or-wallet-tabs-must-exist-anywhere-in-the-component",
+      "title": "Ensure PaymentPage.tsx shows only the Cash on Delivery (COD) option. The view must display 'Pay ₹XXX at doorstep when the provider arrives.' and a single 'Confirm COD' button. Clicking 'Confirm COD' shows a success modal: English '✅ Payment Confirmed! Pay cash at doorstep.' / Hindi '✅ भुगतान कन्फर्म! दरवाजे पर नकद भुगतान करें।' with an OK button. No UPI, Card, or Wallet tabs must exist anywhere in the component.",
+      "reqIds": [
+        "REQ-26"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-in-app-chat-component-inappchat-tsx-is-accessible-from-the-booking-success-modal-s-chat-button-the-chat-ui-must-show-a-conversation-thread-labelled-customer-and-provider-demo-include-a-text-input-and-send-button-a-send-photo-button-that-inserts-a-placeholder-image-thumbnail-into-the-chat-and-persist-the-chat-history-in-localstorage-keyed-by-booking-id-all-visible-text-must-switch-with-the-language-toggle",
+      "title": "Ensure the In-App Chat component (InAppChat.tsx) is accessible from the Booking Success modal's 'Chat' button. The chat UI must show a conversation thread labelled 'Customer' and 'Provider (Demo)', include a text input and Send button, a 'Send Photo' button that inserts a placeholder image thumbnail into the chat, and persist the chat history in localStorage keyed by booking ID. All visible text must switch with the language toggle.",
+      "reqIds": [
+        "REQ-27"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-rating-review-component-ratingreview-tsx-is-triggered-from-the-mark-as-complete-button-in-booking-history-it-must-allow-1-5-star-selection-and-a-text-review-input-on-submission-the-review-is-stored-in-localstorage-under-the-provider-s-id-the-provider-profile-page-must-compute-and-display-the-average-rating-from-all-localstorage-reviews-for-that-provider-merged-with-seed-demo-reviews",
+      "title": "Ensure the Rating & Review component (RatingReview.tsx) is triggered from the 'Mark as Complete' button in Booking History. It must allow 1–5 star selection and a text review input. On submission, the review is stored in localStorage under the provider's ID. The Provider Profile page must compute and display the average rating from all localStorage reviews for that provider, merged with seed demo reviews.",
+      "reqIds": [
+        "REQ-28"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-booking-history-modal-page-bookinghistory-tsx-is-reachable-from-the-navbar-booking-history-link-it-must-display-at-minimum-3-pre-seeded-demo-bookings-with-columns-date-service-provider-name-and-status-each-row-must-have-a-re-book-button-that-opens-the-bookingform-pre-filled-with-that-service-type-a-mark-as-complete-button-that-opens-ratingreview-and-a-provider-name-link-that-opens-providerprofile-all-text-must-be-bilingual",
+      "title": "Ensure the Booking History modal/page (BookingHistory.tsx) is reachable from the navbar 'Booking History' link. It must display at minimum 3 pre-seeded demo bookings with columns: Date, Service, Provider Name, and Status. Each row must have a 'Re-book' button that opens the BookingForm pre-filled with that service type, a 'Mark as Complete' button that opens RatingReview, and a provider name link that opens ProviderProfile. All text must be bilingual.",
+      "reqIds": [
+        "REQ-29"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-refer-earn-modal-referearn-tsx-is-reachable-from-the-navbar-refer-earn-link-it-must-generate-a-unique-referral-code-once-e-g-fix123-and-persist-it-in-localstorage-display-a-copy-code-button-an-explanation-that-both-referrer-and-friend-receive-50-discount-when-the-friend-books-using-the-code-and-a-demo-count-of-successful-referrals-starting-at-0-stored-in-localstorage-all-text-must-be-bilingual",
+      "title": "Ensure the Refer & Earn modal (ReferEarn.tsx) is reachable from the navbar 'Refer & Earn' link. It must generate a unique referral code once (e.g., 'FIX123') and persist it in localStorage. Display a 'Copy Code' button, an explanation that both referrer and friend receive ₹50 discount when the friend books using the code, and a demo count of successful referrals (starting at 0, stored in localStorage). All text must be bilingual.",
+      "reqIds": [
+        "REQ-30"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-emergency-sos-button-emergencysos-tsx-is-visible-on-all-pages-as-a-fixed-position-red-button-labelled-sos-distinct-from-the-whatsapp-and-call-floating-buttons-clicking-it-opens-a-modal-that-shows-alerting-5-nearest-providers-with-a-3-second-animated-progress-bar-then-transitions-to-rajesh-kumar-has-accepted-your-request-he-will-arrive-in-5-minutes-a-cancel-button-must-close-the-modal-at-any-stage-all-text-must-be-bilingual",
+      "title": "Ensure the Emergency SOS button (EmergencySOS.tsx) is visible on all pages as a fixed-position red button labelled 'SOS', distinct from the WhatsApp and Call floating buttons. Clicking it opens a modal that shows 'Alerting 5 nearest providers…' with a 3-second animated progress bar, then transitions to 'Rajesh Kumar has accepted your request! He will arrive in 5 minutes.' A 'Cancel' button must close the modal at any stage. All text must be bilingual.",
+      "reqIds": [
+        "REQ-31"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-schedule-booking-modal-schedulebooking-tsx-is-accessible-from-the-services-section-via-a-schedule-for-later-button-and-from-the-navbar-it-must-include-name-mobile-service-type-dropdown-address-fields-and-a-date-time-picker-for-a-future-date-time-the-standard-otp-flow-demo-otp-123456-2-min-timer-resend-must-gate-the-submission-on-successful-submission-show-a-confirmation-modal-english-reminder-set-you-will-be-notified-before-your-scheduled-booking-on-date-time-with-the-hindi-equivalent-all-text-must-be-bilingual",
+      "title": "Ensure the Schedule Booking modal (ScheduleBooking.tsx) is accessible from the Services section (via a 'Schedule for Later' button) and from the navbar. It must include Name, Mobile, Service Type (dropdown), Address fields, and a date-time picker for a future date/time. The standard OTP flow (demo OTP 123456, 2-min timer, resend) must gate the submission. On successful submission, show a confirmation modal: English 'Reminder set! You will be notified before your scheduled booking on [date/time].' with the Hindi equivalent. All text must be bilingual.",
+      "reqIds": [
+        "REQ-32"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-provider-profile-modal-providerprofile-tsx-is-accessible-by-clicking-a-provider-s-name-in-booking-history-and-from-the-meet-our-providers-section-providerssection-tsx-it-must-display-a-placeholder-avatar-provider-name-service-type-experience-average-star-rating-merged-from-seed-and-localstorage-reviews-total-jobs-completed-and-at-least-2-demo-customer-reviews-a-book-now-button-must-open-the-bookingform-pre-filled-with-the-provider-s-service-type-all-text-must-be-bilingual",
+      "title": "Ensure the Provider Profile modal (ProviderProfile.tsx) is accessible by clicking a provider's name in Booking History and from the 'Meet Our Providers' section (ProvidersSection.tsx). It must display a placeholder avatar, provider name, service type, experience, average star rating (merged from seed and localStorage reviews), total jobs completed, and at least 2 demo customer reviews. A 'Book Now' button must open the BookingForm pre-filled with the provider's service type. All text must be bilingual.",
+      "reqIds": [
+        "REQ-33"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-entire-application-is-fully-responsive-across-mobile-320px-tablet-768px-and-desktop-1024px-breakpoints-all-modals-must-be-scrollable-on-small-screens-and-must-not-overflow-the-viewport-floating-buttons-whatsapp-call-sos-must-not-overlap-each-other-or-obscure-critical-content-on-small-screens",
+      "title": "Ensure the entire application is fully responsive across mobile (≥320px), tablet (≥768px), and desktop (≥1024px) breakpoints. All modals must be scrollable on small screens and must not overflow the viewport. Floating buttons (WhatsApp, Call, SOS) must not overlap each other or obscure critical content on small screens.",
+      "reqIds": [
+        "REQ-34"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-rebrand-the-entire-application-from-quickfix-guru-to-quickrepair-replace-all-instances-of-the-old-brand-name-in-every-component-translation-key-page-title-footer-and-meta-tags-the-logo-must-display-the-icon-followed-by-quick-in-yellow-ffd700-and-repair-in-orange-ff8c42-the-tagline-everywhere-must-read-10-minute-service-at-your-doorstep",
+      "title": "Rebrand the entire application from 'QuickFix Guru' to 'QuickRepair'. Replace all instances of the old brand name in every component, translation key, page title, footer, and meta tags. The logo must display the 🔧 icon followed by 'Quick' in yellow (#FFD700) and 'Repair' in orange (#ff8c42). The tagline everywhere must read '10 Minute Service at Your Doorstep'.",
+      "reqIds": [
+        "REQ-35"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-existing-navbar-with-a-quickrepair-header-the-header-must-show-the-quickrepair-logo-on-the-left-and-a-hamburger-menu-on-the-right-the-hamburger-menu-must-open-with-a-smooth-slide-in-overlay-and-close-when-any-menu-option-is-clicked-menu-options-must-be-home-services-about-contact-become-mechanic-each-option-scrolls-to-the-corresponding-section-remove-the-language-switch-toggle-login-register-booking-history-and-refer-earn-links-from-the-navbar-entirely",
+      "title": "Replace the existing Navbar with a QuickRepair header. The header must show the 🔧 QuickRepair logo on the left and a hamburger menu (☰) on the right. The hamburger menu must open with a smooth slide-in overlay and close when any menu option is clicked. Menu options must be: Home, Services, About, Contact, Become Mechanic. Each option scrolls to the corresponding section. Remove the Language Switch toggle, Login/Register, Booking History, and Refer & Earn links from the navbar entirely.",
+      "reqIds": [
+        "REQ-36"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-rebuild-the-hero-section-with-a-large-bold-heading-quickrepair-mahipalpur-subtitle-10-minute-service-at-your-doorstep-an-animated-css-gradient-background-transitioning-between-dark-blue-0a2b3c-and-1a4b6e-and-a-floating-pulse-css-animation-on-the-main-heading-text-remove-the-stat-badges-bilingual-toggle-and-old-cta-scroll-button",
+      "title": "Rebuild the Hero section with: a large bold heading '🔧 QuickRepair Mahipalpur', subtitle '10 Minute Service at Your Doorstep', an animated CSS gradient background transitioning between dark blue #0a2b3c and #1a4b6e, and a floating/pulse CSS animation on the main heading text. Remove the stat badges, bilingual toggle, and old CTA scroll button.",
+      "reqIds": [
+        "REQ-37"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-rebuild-the-services-section-with-exactly-5-service-cards-displayed-in-a-responsive-grid-each-card-must-show-a-relevant-icon-the-service-name-and-its-fixed-price-the-services-and-prices-are-plumber-460-electrician-160-fan-cooler-repair-190-ac-repair-470-mechanic-general-390-each-card-must-have-a-lift-up-hover-effect-with-a-box-shadow-clicking-any-card-must-open-whatsapp-https-wa-me-8447978940-with-the-pre-filled-url-encoded-message-hi-quickrepair-i-need-service-name-in-mahipalpur-remove-any-existing-otp-based-booking-modal-trigger-from-service-card-clicks-remove-the-schedule-for-later-button-from-this-section",
+      "title": "Rebuild the Services section with exactly 5 service cards displayed in a responsive grid. Each card must show a relevant icon, the service name, and its fixed price. The services and prices are: Plumber ₹460, Electrician ₹160, Fan / Cooler Repair ₹190, AC Repair ₹470, Mechanic (General) ₹390. Each card must have a lift-up hover effect with a box shadow. Clicking any card must open WhatsApp (https://wa.me/8447978940) with the pre-filled URL-encoded message: 'Hi QuickRepair, I need [service name] in Mahipalpur.' Remove any existing OTP-based booking modal trigger from service card clicks. Remove the 'Schedule for Later' button from this section.",
+      "reqIds": [
+        "REQ-38"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-prominent-pulsing-green-whatsapp-cta-button-labeled-book-via-whatsapp-below-the-services-section-the-button-must-have-a-continuous-css-pulse-animation-clicking-it-must-open-https-wa-me-8447978940-text-hi-20quickrepair-2c-20mujhe-20service-20chahiye-20mahipalpur-20mein-in-a-new-tab",
+      "title": "Add a prominent pulsing green WhatsApp CTA button labeled '📲 BOOK VIA WHATSAPP' below the Services section. The button must have a continuous CSS pulse animation. Clicking it must open https://wa.me/8447978940?text=Hi%20QuickRepair%2C%20mujhe%20service%20chahiye%20Mahipalpur%20mein in a new tab.",
+      "reqIds": [
+        "REQ-39"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-wire-the-become-mechanic-navbar-menu-option-to-open-whatsapp-https-wa-me-8447978940-with-the-pre-filled-url-encoded-message-hi-quickrepair-main-mechanic-banana-chahta-hoon-mera-naam-phone-service-remove-the-existing-providerregistrationform-modal-no-otp-form-should-open-for-this-action",
+      "title": "Wire the 'Become Mechanic' navbar menu option to open WhatsApp (https://wa.me/8447978940) with the pre-filled URL-encoded message: 'Hi QuickRepair, main mechanic banana chahta hoon. Mera naam ______, phone ______, service ______.' Remove the existing ProviderRegistrationForm modal; no OTP form should open for this action.",
+      "reqIds": [
+        "REQ-40"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-rebuild-the-about-us-section-with-a-clean-card-based-layout-the-section-must-contain-four-feature-cards-each-with-an-icon-and-label-verified-mechanics-10-min-guarantee-cash-on-delivery-no-hidden-charges-remove-all-bilingual-toggle-logic-from-this-section-display-content-in-english-only",
+      "title": "Rebuild the About Us section with a clean card-based layout. The section must contain four feature cards, each with an icon and label: ✅ Verified Mechanics, ⏱️ 10 Min Guarantee, 💵 Cash on Delivery, 🚫 No Hidden Charges. Remove all bilingual toggle logic from this section; display content in English only.",
+      "reqIds": [
+        "REQ-41"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-rebuild-the-contact-us-section-displaying-phone-number-8447978940-with-tel-link-email-quickrepair-help-in-with-mailto-link-service-areas-mahipalpur-extension-mahipalpur-village-aerocity-vasant-kunj-rk-puram-kapashera-and-working-hours-8-am-to-10-pm-emergency-24x7-each-item-must-have-an-icon-with-a-hover-color-change-effect",
+      "title": "Rebuild the Contact Us section displaying: phone number 8447978940 (with tel: link), email quickrepair@help.in (with mailto: link), service areas (Mahipalpur Extension, Mahipalpur Village, Aerocity, Vasant Kunj, RK Puram, Kapashera), and working hours (8 AM to 10 PM, Emergency 24x7). Each item must have an icon with a hover color-change effect.",
+      "reqIds": [
+        "REQ-42"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-rebuild-the-footer-to-show-quickrepair-name-and-tagline-10-minute-service-at-your-doorstep-contact-info-phone-8447978940-email-quickrepair-help-in-area-mahipalpur-delhi-quick-navigation-links-home-services-about-contact-and-a-copyright-line-2024-quickrepair-all-rights-reserved-footer-links-must-have-a-subtle-hover-animation-the-footer-must-be-fully-responsive",
+      "title": "Rebuild the Footer to show: QuickRepair name and tagline '10 Minute Service at Your Doorstep', contact info (phone 8447978940, email quickrepair@help.in, area Mahipalpur, Delhi), quick navigation links (Home, Services, About, Contact), and a copyright line '© 2024 QuickRepair. All rights reserved.' Footer links must have a subtle hover animation. The footer must be fully responsive.",
+      "reqIds": [
+        "REQ-43"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-global-color-scheme-and-design-system-to-match-the-quickrepair-brand-primary-colors-dark-navy-0a2b3c-backgrounds-yellow-ffd700-accent-quick-text-orange-ff8c42-cta-repair-text-white-for-body-text-apply-stagger-entrance-animations-to-service-cards-on-page-load-ensure-smooth-scrolling-is-active-for-all-anchor-section-navigation-all-interactive-buttons-must-have-visible-hover-and-active-click-feedback-ensure-no-content-overlaps-on-mobile",
+      "title": "Update the global color scheme and design system to match the QuickRepair brand. Primary colors: dark navy #0a2b3c (backgrounds), yellow #FFD700 (accent / 'Quick' text), orange #ff8c42 (CTA / 'Repair' text), white for body text. Apply stagger entrance animations to service cards on page load. Ensure smooth scrolling is active for all anchor/section navigation. All interactive buttons must have visible hover and active (click) feedback. Ensure no content overlaps on mobile.",
+      "reqIds": [
+        "REQ-44"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-all-features-that-are-not-part-of-the-quickrepair-whatsapp-based-flow-otp-booking-modal-bookingform-successmodal-paymentpage-inappchat-livetracking-ratingreview-bookinghistory-referearn-schedulebooking-providerprofile-providerssection-providerregistrationform-and-emergencysos-components-must-all-be-removed-from-the-rendered-ui-and-from-app-tsx-all-related-modal-state-variables-handlers-and-translation-keys-should-be-cleaned-up-the-floating-whatsapp-and-call-buttons-floatingbuttons-tsx-must-remain-and-continue-to-link-to-8447978940",
+      "title": "Remove all features that are not part of the QuickRepair WhatsApp-based flow: OTP booking modal (BookingForm), SuccessModal, PaymentPage, InAppChat, LiveTracking, RatingReview, BookingHistory, ReferEarn, ScheduleBooking, ProviderProfile, ProvidersSection, ProviderRegistrationForm, and EmergencySOS components must all be removed from the rendered UI and from App.tsx. All related modal state variables, handlers, and translation keys should be cleaned up. The floating WhatsApp and Call buttons (FloatingButtons.tsx) must remain and continue to link to 8447978940.",
+      "reqIds": [
+        "REQ-45"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [],
+  "gameProjectType": "none",
+  "projectName": "QuickFix Guru",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,212 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-rebrand-the-entire-application-from-quickfix-guru-to-quickrepair-replace-all-instances-of-the-old-brand-name-in-every-component-translation-key-page-title-footer-and-meta-tags-the-logo-must-display-the-icon-followed-by-quick-in-yellow-ffd700-and-repair-in-orange-ff8c42-the-tagline-everywhere-must-read-10-minute-service-at-your-doorstep",
+      "featureTitle": "Rebrand the entire application from 'QuickFix Guru' to 'QuickRepair'. Replace all instances of the old brand name in every component, translation key, page title, footer, and meta tags. The logo must display the 🔧 icon followed by 'Quick' in yellow (#FFD700) and 'Repair' in orange (#ff8c42). The tagline everywhere must read '10 Minute Service at Your Doorstep'.",
+      "files": [
+        "frontend/index.html",
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/components/Hero.tsx",
+        "frontend/src/components/Navbar.tsx",
+        "frontend/src/contexts/LanguageContext.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-35"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-replace-the-existing-navbar-with-a-quickrepair-header-the-header-must-show-the-quickrepair-logo-on-the-left-and-a-hamburger-menu-on-the-right-the-hamburger-menu-must-open-with-a-smooth-slide-in-overlay-and-close-when-any-menu-option-is-clicked-menu-options-must-be-home-services-about-contact-become-mechanic-each-option-scrolls-to-the-corresponding-section-remove-the-language-switch-toggle-login-register-booking-history-and-refer-earn-links-from-the-navbar-entirely",
+      "featureTitle": "Replace the existing Navbar with a QuickRepair header. The header must show the 🔧 QuickRepair logo on the left and a hamburger menu (☰) on the right. The hamburger menu must open with a smooth slide-in overlay and close when any menu option is clicked. Menu options must be: Home, Services, About, Contact, Become Mechanic. Each option scrolls to the corresponding section. Remove the Language Switch toggle, Login/Register, Booking History, and Refer & Earn links from the navbar entirely.",
+      "files": [
+        "frontend/src/components/Navbar.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-36"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-rebuild-the-hero-section-with-a-large-bold-heading-quickrepair-mahipalpur-subtitle-10-minute-service-at-your-doorstep-an-animated-css-gradient-background-transitioning-between-dark-blue-0a2b3c-and-1a4b6e-and-a-floating-pulse-css-animation-on-the-main-heading-text-remove-the-stat-badges-bilingual-toggle-and-old-cta-scroll-button",
+      "featureTitle": "Rebuild the Hero section with: a large bold heading '🔧 QuickRepair Mahipalpur', subtitle '10 Minute Service at Your Doorstep', an animated CSS gradient background transitioning between dark blue #0a2b3c and #1a4b6e, and a floating/pulse CSS animation on the main heading text. Remove the stat badges, bilingual toggle, and old CTA scroll button.",
+      "files": [
+        "frontend/src/components/Hero.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-37"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-rebuild-the-services-section-with-exactly-5-service-cards-displayed-in-a-responsive-grid-each-card-must-show-a-relevant-icon-the-service-name-and-its-fixed-price-the-services-and-prices-are-plumber-460-electrician-160-fan-cooler-repair-190-ac-repair-470-mechanic-general-390-each-card-must-have-a-lift-up-hover-effect-with-a-box-shadow-clicking-any-card-must-open-whatsapp-https-wa-me-8447978940-with-the-pre-filled-url-encoded-message-hi-quickrepair-i-need-service-name-in-mahipalpur-remove-any-existing-otp-based-booking-modal-trigger-from-service-card-clicks-remove-the-schedule-for-later-button-from-this-section",
+      "featureTitle": "Rebuild the Services section with exactly 5 service cards displayed in a responsive grid. Each card must show a relevant icon, the service name, and its fixed price. The services and prices are: Plumber ₹460, Electrician ₹160, Fan / Cooler Repair ₹190, AC Repair ₹470, Mechanic (General) ₹390. Each card must have a lift-up hover effect with a box shadow. Clicking any card must open WhatsApp (https://wa.me/8447978940) with the pre-filled URL-encoded message: 'Hi QuickRepair, I need [service name] in Mahipalpur.' Remove any existing OTP-based booking modal trigger from service card clicks. Remove the 'Schedule for Later' button from this section.",
+      "files": [
+        "frontend/src/components/Services.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-38"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-prominent-pulsing-green-whatsapp-cta-button-labeled-book-via-whatsapp-below-the-services-section-the-button-must-have-a-continuous-css-pulse-animation-clicking-it-must-open-https-wa-me-8447978940-text-hi-20quickrepair-2c-20mujhe-20service-20chahiye-20mahipalpur-20mein-in-a-new-tab",
+      "featureTitle": "Add a prominent pulsing green WhatsApp CTA button labeled '📲 BOOK VIA WHATSAPP' below the Services section. The button must have a continuous CSS pulse animation. Clicking it must open https://wa.me/8447978940?text=Hi%20QuickRepair%2C%20mujhe%20service%20chahiye%20Mahipalpur%20mein in a new tab.",
+      "files": [
+        "frontend/src/components/Services.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-39"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-wire-the-become-mechanic-navbar-menu-option-to-open-whatsapp-https-wa-me-8447978940-with-the-pre-filled-url-encoded-message-hi-quickrepair-main-mechanic-banana-chahta-hoon-mera-naam-phone-service-remove-the-existing-providerregistrationform-modal-no-otp-form-should-open-for-this-action",
+      "featureTitle": "Wire the 'Become Mechanic' navbar menu option to open WhatsApp (https://wa.me/8447978940) with the pre-filled URL-encoded message: 'Hi QuickRepair, main mechanic banana chahta hoon. Mera naam ______, phone ______, service ______.' Remove the existing ProviderRegistrationForm modal; no OTP form should open for this action.",
+      "files": [
+        "frontend/src/components/Navbar.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-40"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-rebuild-the-about-us-section-with-a-clean-card-based-layout-the-section-must-contain-four-feature-cards-each-with-an-icon-and-label-verified-mechanics-10-min-guarantee-cash-on-delivery-no-hidden-charges-remove-all-bilingual-toggle-logic-from-this-section-display-content-in-english-only",
+      "featureTitle": "Rebuild the About Us section with a clean card-based layout. The section must contain four feature cards, each with an icon and label: ✅ Verified Mechanics, ⏱️ 10 Min Guarantee, 💵 Cash on Delivery, 🚫 No Hidden Charges. Remove all bilingual toggle logic from this section; display content in English only.",
+      "files": [
+        "frontend/src/components/AboutUs.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-41"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-rebuild-the-contact-us-section-displaying-phone-number-8447978940-with-tel-link-email-quickrepair-help-in-with-mailto-link-service-areas-mahipalpur-extension-mahipalpur-village-aerocity-vasant-kunj-rk-puram-kapashera-and-working-hours-8-am-to-10-pm-emergency-24x7-each-item-must-have-an-icon-with-a-hover-color-change-effect",
+      "featureTitle": "Rebuild the Contact Us section displaying: phone number 8447978940 (with tel: link), email quickrepair@help.in (with mailto: link), service areas (Mahipalpur Extension, Mahipalpur Village, Aerocity, Vasant Kunj, RK Puram, Kapashera), and working hours (8 AM to 10 PM, Emergency 24x7). Each item must have an icon with a hover color-change effect.",
+      "files": [
+        "frontend/src/components/ContactUs.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-42"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-rebuild-the-footer-to-show-quickrepair-name-and-tagline-10-minute-service-at-your-doorstep-contact-info-phone-8447978940-email-quickrepair-help-in-area-mahipalpur-delhi-quick-navigation-links-home-services-about-contact-and-a-copyright-line-2024-quickrepair-all-rights-reserved-footer-links-must-have-a-subtle-hover-animation-the-footer-must-be-fully-responsive",
+      "featureTitle": "Rebuild the Footer to show: QuickRepair name and tagline '10 Minute Service at Your Doorstep', contact info (phone 8447978940, email quickrepair@help.in, area Mahipalpur, Delhi), quick navigation links (Home, Services, About, Contact), and a copyright line '© 2024 QuickRepair. All rights reserved.' Footer links must have a subtle hover animation. The footer must be fully responsive.",
+      "files": [
+        "frontend/src/components/Footer.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-43"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-global-color-scheme-and-design-system-to-match-the-quickrepair-brand-primary-colors-dark-navy-0a2b3c-backgrounds-yellow-ffd700-accent-quick-text-orange-ff8c42-cta-repair-text-white-for-body-text-apply-stagger-entrance-animations-to-service-cards-on-page-load-ensure-smooth-scrolling-is-active-for-all-anchor-section-navigation-all-interactive-buttons-must-have-visible-hover-and-active-click-feedback-ensure-no-content-overlaps-on-mobile",
+      "featureTitle": "Update the global color scheme and design system to match the QuickRepair brand. Primary colors: dark navy #0a2b3c (backgrounds), yellow #FFD700 (accent / 'Quick' text), orange #ff8c42 (CTA / 'Repair' text), white for body text. Apply stagger entrance animations to service cards on page load. Ensure smooth scrolling is active for all anchor/section navigation. All interactive buttons must have visible hover and active (click) feedback. Ensure no content overlaps on mobile.",
+      "files": [
+        "frontend/src/components/Services.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-44"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-remove-all-features-that-are-not-part-of-the-quickrepair-whatsapp-based-flow-otp-booking-modal-bookingform-successmodal-paymentpage-inappchat-livetracking-ratingreview-bookinghistory-referearn-schedulebooking-providerprofile-providerssection-providerregistrationform-and-emergencysos-components-must-all-be-removed-from-the-rendered-ui-and-from-app-tsx-all-related-modal-state-variables-handlers-and-translation-keys-should-be-cleaned-up-the-floating-whatsapp-and-call-buttons-floatingbuttons-tsx-must-remain-and-continue-to-link-to-8447978940",
+      "featureTitle": "Remove all features that are not part of the QuickRepair WhatsApp-based flow: OTP booking modal (BookingForm), SuccessModal, PaymentPage, InAppChat, LiveTracking, RatingReview, BookingHistory, ReferEarn, ScheduleBooking, ProviderProfile, ProvidersSection, ProviderRegistrationForm, and EmergencySOS components must all be removed from the rendered UI and from App.tsx. All related modal state variables, handlers, and translation keys should be cleaned up. The floating WhatsApp and Call buttons (FloatingButtons.tsx) must remain and continue to link to 8447978940.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Navbar.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-45"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
