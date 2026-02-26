@@ -19,5 +19,5 @@
   "frontend/src/components/PaymentPage.tsx": "COD-only payment page showing the amount, doorstep payment message, three benefit bullets, and a \"Confirm COD\" button; on confirmation it shows a bilingual success modal with an OK button — all UPI, Card, and Wallet options have been removed.",
   "frontend/src/components/LiveTracking.tsx": "Animated live tracking demo modal with provider/customer map markers and ETA countdown — updated to use static strings instead of the old function-call `t('key')` syntax.",
   "frontend/src/components/BookingHistory.tsx": "Booking history modal with desktop table and mobile card layouts, showing demo + localStorage bookings with Re-book, Mark as Complete, and View Provider action buttons.",
-  "frontend/index.html": "HTML entry point with updated page title \"QuickRepair\" and meta description for the Mahipalpur service business."
+  "frontend/index.html": "HTML entry point with QuickRepair page title, meta description for the Mahipalpur service business, and the Google Site Verification meta tag added before the closing `</head>` tag."
 }

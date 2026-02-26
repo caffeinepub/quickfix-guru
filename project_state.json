@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 11,
+  "projectStateVersion": 13,
   "summary": "QuickRepair - Professional service booking website for Mahipalpur, Delhi (rebranded from QuickFix Guru). Single HTML file with inline CSS and JS. Business: QuickRepair, contact 8447978940, email quickrepair@help.in, working hours 8AM-10PM (Emergency 24x7). Service areas: Mahipalpur Extension, Mahipalpur Village, Aerocity, Vasant Kunj, RK Puram, Kapashera. Services with fixed prices: Plumber ₹460, Electrician ₹160, Fan/Cooler Repair ₹190, AC Repair ₹470, Mechanic ₹390. Features: hamburger menu (Home, Services, About, Contact, Become Mechanic), hero section with gradient animation, service cards with WhatsApp booking links, pulsing WhatsApp CTA button, About section, Contact section, Footer. All bookings via WhatsApp. COD only. Fully responsive. No OTP system — WhatsApp-based booking flow.",
   "architectural_notes": [
     "Business rebranded to QuickRepair — logo: 'Quick' in yellow #FFD700, 'Repair' in orange #ff8c42",
@@ -370,9 +370,24 @@
         "REQ-45"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-add-the-google-site-verification-meta-tag-meta-name-google-site-verification-content-op0cjominm3aovx7lrr0rvy9jrjjjxlw7qdfjfymo5y-to-the-head-section-of-frontend-index-html-placed-before-the-first-body-tag",
+      "title": "Add the Google Site Verification meta tag `<meta name=\"google-site-verification\" content=\"op0cJomiNM3AovX7LRR0RVy9JRJJjxlW7qdfJFYmo5Y\" />` to the `<head>` section of `frontend/index.html`, placed before the first `<body>` tag.",
+      "reqIds": [
+        "REQ-46"
+      ],
+      "version": 1
     }
   ],
-  "new_feature_requests": [],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Add Google Site Verification meta tag to the <head> section of the homepage",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
   "gameProjectType": "none",
   "projectName": "QuickFix Guru",
   "clarification_mode": "instant",
